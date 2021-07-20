@@ -1,0 +1,13 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title> Weather Dashboard </title>
+</head>
+<body>
+    <h1>Weather</h1>
+    <form action = "{{ url_for('render_results')}}" method = "post">
+        Location Zip Code: <input type="text" name = "zipcode"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
